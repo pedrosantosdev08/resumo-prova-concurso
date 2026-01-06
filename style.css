@@ -1,0 +1,190 @@
+/* ================================
+   RESET E BASE
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue",
+    Arial, sans-serif;
+  background-color: #0f172a; 
+  color: #e5e7eb; 
+  line-height: 1.7;
+}
+
+/* ================================
+   LAYOUT PRINCIPAL
+================================ */
+section {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+nav {
+     width: 50%;
+     margin: auto;
+}
+
+/* ================================
+   TÍTULOS
+================================ */
+
+h1{
+    text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+  border-left: 4px solid #38bdf8;
+  padding-left: 1rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #e0f2fe;
+}
+
+/* ================================
+   TEXTO
+================================ */
+p {
+  margin: 0.5rem 0 1.25rem;
+  color: #cbd5f5;
+}
+
+#prg-principal{
+    text-align: center;
+}
+
+img{
+  height: 500px;
+  width: 500px;
+}
+
+/* ================================
+   LISTAS
+================================ */
+
+a {
+    text-decoration: none;
+    color: #38bdf8;
+    
+}
+
+a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+li {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background-color: #020617;
+  transform: translateY(-2px);
+}
+
+/* Destaque para termos importantes */
+strong {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+em {
+  color: #a5b4fc;
+}
+
+/* ================================
+   FOCO EM LEITURA
+================================ */
+section > p:first-of-type {
+  font-size: 1.05rem;
+  color: #e5e7eb;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+  section {
+    padding: 2.25rem 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  li {
+    padding: 0.9rem 1rem;
+  }
+}
+
+/* ================================
+   ACESSIBILIDADE
+================================ */
+:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+/* ================================
+   IMPRESSÃO (ESTUDO OFFLINE)
+================================ */
+@media print {
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  section {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  li {
+    border: 1px solid #000;
+    background: #fff;
+  }
+}

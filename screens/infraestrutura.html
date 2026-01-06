@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infraestrutura</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <section>
+      <h2>Infraestrutura, DevOps, Redes e Banco de Dados</h2>
+      <p>
+        Este módulo aborda o ecossistema onde o software reside, como ele é
+        implantado e as camadas de comunicação e persistência que garantem sua
+        disponibilidade e performance.
+      </p>
+
+      <h3>1. DevOps e CI/CD</h3>
+      <p>
+        Cultura e práticas que unem o desenvolvimento (Dev) e as operações (Ops)
+        para acelerar a entrega de software com qualidade.
+      </p>
+      <ul>
+        <li>
+          <strong>CI (Continuous Integration):</strong> Automação da integração
+          de código de vários desenvolvedores, incluindo testes automáticos a
+          cada novo <em>commit</em>.
+        </li>
+        <li>
+          <strong>CD (Continuous Delivery/Deployment):</strong> Automação da
+          entrega do software em ambientes de homologação ou produção,
+          garantindo que o sistema esteja sempre pronto para ser lançado.
+        </li>
+      </ul>
+
+      <h3>2. Conteinerização e Orquestração</h3>
+      <p>
+        Tecnologias que isolam o software do ambiente físico, garantindo que ele
+        rode da mesma forma em qualquer lugar.
+      </p>
+      <ul>
+        <li>
+          <strong>Docker:</strong> Permite criar contêineres que empacotam o
+          código e todas as suas dependências.
+        </li>
+        <li>
+          <strong>Kubernetes (K8s):</strong> Ferramenta de orquestração que
+          gerencia milhares de contêineres, lidando com escalabilidade
+          automática, disponibilidade e atualizações sem interrupção.
+        </li>
+      </ul>
+
+      <h3>3. Observabilidade</h3>
+      <p>
+        A capacidade de entender o estado interno de um sistema complexo a
+        partir dos dados que ele gera externamente. Baseia-se em três pilares:
+      </p>
+      <ul>
+        <li>
+          <strong>Métricas:</strong> Dados numéricos ao longo do tempo (ex: uso
+          de CPU, tempo de resposta).
+        </li>
+        <li>
+          <strong>Logs:</strong> Registros de eventos específicos que ocorreram
+          no sistema.
+        </li>
+        <li>
+          <strong>Tracing:</strong> Rastreamento do caminho de uma requisição
+          através de vários microserviços.
+        </li>
+      </ul>
+
+      <h3>4. Bancos de Dados e SQL</h3>
+      <p>Onde a informação é armazenada de forma persistente e estruturada.</p>
+      <ul>
+        <li>
+          <strong>SQL (Relacional):</strong> Utiliza tabelas e esquemas rígidos
+          (ex: PostgreSQL, MySQL, SQL Server). Ideal para dados com relações
+          complexas e necessidade de consistência absoluta.
+        </li>
+        <li>
+          <strong>NoSQL (Não-Relacional):</strong> Flexível, focado em alta
+          escala e diferentes formatos de dados, como documentos (MongoDB),
+          chave-valor (Redis) ou grafos (Neo4j).
+        </li>
+      </ul>
+
+      <h3>5. Redes e Protocolos</h3>
+      <p>
+        A infraestrutura de comunicação que permite que os sistemas se
+        comuniquem.
+      </p>
+      <ul>
+        <li>
+          <strong>TCP/IP:</strong> Conjunto de protocolos fundamental da
+          Internet; o TCP garante que os dados cheguem na ordem correta e sem
+          erros.
+        </li>
+        <li>
+          <strong>HTTP/HTTPS:</strong> Protocolos de transferência de
+          hipertexto. O HTTPS adiciona uma camada de criptografia (SSL/TLS),
+          essencial para a segurança dos dados trafegados na web.
+        </li>
+        <li>
+          <strong>DNS:</strong> Sistema que traduz nomes de domínios (ex:
+          google.com) em endereços IP.
+        </li>
+      </ul>
+
+      <h3>6. Computação em Nuvem (Cloud Computing)</h3>
+      <p>
+        Entrega de serviços de computação (servidores, armazenamento e bancos de
+        dados) sob demanda via internet.
+      </p>
+      <ul>
+        <li>
+          <strong>Provedores Principais:</strong> AWS (Amazon), Google Cloud
+          (GCP) e Microsoft Azure.
+        </li>
+        <li>
+          <strong>IaaS:</strong> Infraestrutura como serviço (máquinas
+          virtuais).
+        </li>
+        <li>
+          <strong>PaaS:</strong> Plataforma como serviço (foco apenas no código,
+          a nuvem cuida do servidor).
+        </li>
+        <li>
+          <strong>SaaS:</strong> Software como serviço (aplicações prontas para
+          uso).
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
