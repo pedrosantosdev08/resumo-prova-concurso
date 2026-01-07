@@ -28,6 +28,12 @@ section {
   max-width: 920px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
+  opacity: 0;
+  animation: contentEnter 1.2s ease forwards;
+}
+
+header {
+  animation: contentEnter 1.3s ease forwards;
 }
 
 nav {
@@ -185,6 +191,19 @@ section > p:first-of-type {
   outline: 2px solid #38bdf8;
   outline-offset: 2px;
 }
+
+
+@keyframes contentEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ================================
    IMPRESSÃO (ESTUDO OFFLINE)
